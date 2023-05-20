@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VP.Start</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -27,13 +28,14 @@
             <a href="#" class="active">
                 Home
             </a>
-            <a style="cursor: pointer;" onclick="openNav()">Our Products</a>
+            <a style="cursor: pointer;" onclick="openNav()">Our Products <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></a>
             <div id="myNav" class="overlay">
                 <div class="overlay-content">
-                    <div class="img-products">
-                        <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
-                    </div>
+                    <!-- <div class="img-products"> -->
+                    <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
+                    <!-- </div> -->
                     <div class="product-menu">
+                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="#">Smart Grid Solutions</a>
                         <a href="#">AlienCheck</a>
                         <a href="#">Home Automation</a>
@@ -43,44 +45,35 @@
                 </div>
             </div>
             <a href="#">
-                Menu
+                About Us <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
             </a>
             <a href="#">
-                Chefs
+                Customer <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
             </a>
             <a href="#">
-                Contact
+                Support <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
             </a>
+            <a href="#">
+                STEM
+            </a>
+            
         </div>
     </div>
     <!-- slide show -->
     <div id="slideshow-container" class="slideshow-container">
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-05.jpg');">
-        </div>
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-06.jpg');">
-        </div>
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-04.jpg');">
-
-        </div>
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-01.jpg');">
-
-        </div>
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-03.jpg');">
-
-        </div>
-        <div class="slide-item bgimg fade"
-            style="background-image: url('assets/images/cover web-02.jpg');">
-
-        </div>
-
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-05.jpg');"></div>
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-06.jpg');"></div>
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-04.jpg');"></div>
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-01.jpg');"></div>
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-03.jpg');"></div>
+        <div class="slide-item bgimg fade" style="background-image: url('assets/images/cover web-02.jpg');"></div>
     </div>
+    <div class="section">
+        <p>YOUR BEST DIGITAL SOLUTION</p>
+        <button class="view-product">
+            View Products
+        </button>
     </div>
 </body>
 <script src="script.js"></script>
-
 </html>

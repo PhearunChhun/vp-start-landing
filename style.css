@@ -98,7 +98,8 @@ body {
 }
 
 .bgimg {
-    height: 870px;
+    /* width: 1512px; */
+    height: 750px;
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
@@ -136,36 +137,94 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-y: hidden;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-content {
     position: relative;
     width: 100%;
+    height: 680px;
     text-align: center;
-    /* margin: 0 100px; */
-    margin-top: 80px;
+    /* margin-top: auto !important; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #000000;
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .overlay-content .product-menu {
-    position: absolute;
+    position: relative;
     width: 879px;
     height: 680px;
-    left: 833px;
+    top: 0px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: end;
+}
+
+.overlay-content .product-menu .menu a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.overlay-content img {
+    position: relative;
+    width: 800px;
+    min-height: 680px;
+    left: 0px;
     top: 0px;
 }
 
-.img-products img{
+.overlay .closebtn {
     position: absolute;
-    width: 800px;
-    height: 680px;
-    z-index: 20;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
+.section {
+    background-image: url('assets/images/solution-digital.jpg');
+    /* background: rgba(0,0,0,0.5); */
+    height: 750px;
+    position: relative;
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section p {
+    position: absolute;
+    width: 1032px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.section .view-product
 @media screen and (max-height: 450px) {
     .overlay {
         overflow-y: auto;
