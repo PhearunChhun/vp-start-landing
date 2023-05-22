@@ -14,17 +14,17 @@
 body {
     margin: 0;
     padding: 0;
+    background: #0D0D0D;
 }
 
+/* navigation bar */
 .navbar {
     background-color: transparent;
-    /* padding: 30px 10px; */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     margin: 0 100px;
-    /* max-width: 1366px; */
     z-index: 99;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,6 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    /* font-weight: 400; */
     line-height: 25px;
     padding: 12px;
 }
@@ -46,7 +45,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: red; */
 }
 
 .navbar .logo .logo-text .vp-start {
@@ -74,10 +72,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* .navbar-right a.active {
-	color: #948D8C;
-} */
-
 .navbar-right {
     float: right;
     font-family: 'DM Sans', sans-serif;
@@ -88,6 +82,7 @@ body {
     display: none;
 }
 
+/* slide show image */
 .slideshow-container {
     position: relative;
     height: 100%;
@@ -98,7 +93,6 @@ body {
 }
 
 .bgimg {
-    /* width: 1512px; */
     height: 750px;
     position: relative;
     background-position: center center;
@@ -113,9 +107,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    /* background: rgba(0,0,0,0.4); */
 }
-
 
 .slide-control {
     position: absolute;
@@ -125,7 +117,7 @@ body {
     text-align: center;
 }
 
-
+/* drop down overlay */
 .overlay {
     height: 0%;
     width: 100%;
@@ -147,7 +139,6 @@ body {
     width: 100%;
     height: 680px;
     text-align: center;
-    /* margin-top: auto !important; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,8 +164,6 @@ body {
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
-    /* identical to box height, or 29px */
-
     letter-spacing: 0.01em;
     color: #FFFFFF;
 }
@@ -194,37 +183,140 @@ body {
     font-size: 60px;
 }
 
+/* section */
 .section {
-    background-image: url('assets/images/solution-digital.jpg');
-    /* background: rgba(0,0,0,0.5); */
-    height: 750px;
     position: relative;
+    background-image: url('assets/images/solution-digital.jpg');
+    height: 750px;
+    text-align: center;
     background-position: center center;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content .header h1 {
+    width: 1032px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150%;
+}
+
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.section p {
-    position: absolute;
-    width: 1032px;
-    font-family: 'Montserrat', sans-serif;
+.btn-view-product {
+    width: 198px;
+    font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
+    font-weight: 500;
+    font-size: 24px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-
+    display: inline-block;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 30px;
+    text-decoration: none;
 }
 
-.section .view-product
+.btn-view-product:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* our solution */
+.our-solutions {
+    margin: 0 100px;
+    color: #fff;
+}
+
+.our-solutions-header h1 {
+    color: #fff;
+}
+
+.our-solution-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.smartgrid,
+.aliencheck,
+.home-automation,
+.smart-city,
+.cloud-service {
+    width: 600px;
+    height: 467px;
+}
+.smartgrid{
+    background-image:url("assets/images/smartgrid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.smartgrid:hover{
+    background-image:url("assets/images/smartgrid-hover.png") ;
+}
+.aliencheck{
+    background-image:url("assets/images/aliencheck.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.aliencheck:hover{
+    background-image:url("assets/images/aliencheck-hover.png") ;
+}
+.home-automation{
+    background-image:url("assets/images/home-automation.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.home-automation:hover{
+    background-image:url("assets/images/home-automation-hover.png") ;
+}
+.smart-city{
+    background-image:url("assets/images/smart-city.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.smart-city:hover{
+    background-image:url("assets/images/smart-city-hover.png") ;
+}
+.cloud-service{
+    background-image:url("assets/images/cloud-service.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+.cloud-service:hover{
+    background-image:url("assets/images/cloud-service-hover.png") ;
+}
 @media screen and (max-height: 450px) {
     .overlay {
         overflow-y: auto;
