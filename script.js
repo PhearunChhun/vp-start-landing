@@ -1,18 +1,18 @@
+// image slide show
 var slideIndex = 0;
 
 showSlide();
 
-var timer = setInterval(showSlide, 3000);
+var timer = setInterval(showSlide, 3500);
 
 var slideContainer = document.getElementById("slideshow-container");
 var slideControl = document.getElementById("slide-control");
-let cls_Btn = document.querySelector(".cls_btn");
 slideContainer.onmouseover = function () {
   clearInterval(timer);
 };
 
 slideContainer.onmouseleave = function () {
-  timer = setInterval(showSlide, 3000);
+  timer = setInterval(showSlide, 3500);
 };
 
 function showSlide() {
@@ -27,12 +27,6 @@ function showSlide() {
   slides[slideIndex - 1].style.display = "block";
 }
 
-function chooseSlide(n) {
-  slideIndex = n;
-  showSlide();
-  clearInterval(timer);
-}
-
 function showMenu() {
   var topNav = document.getElementById("topnav");
   if (topNav.className === "navbar") {
@@ -42,9 +36,31 @@ function showMenu() {
   }
 }
 // open dropdown our product
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
+function ourProduct() {
+  document.getElementById("our-product").style.height = "100%";
 }
-function closeNav() {
-  document.getElementById("myNav").style.height = "0";
+function aboutUs() {
+  document.getElementById("about-us").style.height = "100%";
 }
+function customer() {
+  document.getElementById("customer").style.height = "100%";
+}
+function support() {
+  document.getElementById("support").style.height = "100%";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  var close_our_product = document.getElementById("our-product");
+  var close_about_us = document.getElementById("about-us");
+  var close_customer = document.getElementById("customer");
+  var close_support = document.getElementById("support");
+  if (event.target == close_our_product) {
+    close_our_product.style.height = "0%";
+  } else if (event.target == close_about_us) {
+    close_about_us.style.height = "0%";
+  } else if (event.target == close_customer) {
+    close_customer.style.height = "0%";
+  } else if (event.target == close_support) {
+    close_support.style.height = "0%";
+  }
+};
