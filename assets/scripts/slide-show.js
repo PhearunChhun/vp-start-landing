@@ -12,8 +12,6 @@ arrowIconsHardware.forEach(icon => {
         let firstImgWidth = firstImgOfContentThree.clientWidth + 14; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-        console.log(carousel.scrollLeft);
-
     });
 });
 arrowIconsSoftware.forEach(icon => {
@@ -61,11 +59,10 @@ carouselimg2.addEventListener("mousemove", (e) => {
   if (moving) {
     const currentPosition = e.pageX;
     const diff = currentPosition - initialPosition;
-    carouselimg.style.transform = `translateX(${transform + diff}px)`;
+    carouselimg2.style.transform = `translateX(${transform + diff}px)`;
   }
 });
 
 carouselimg2.addEventListener("mouseup", (e) => {
-  console.log("Hello");
   moving = false;
 });
