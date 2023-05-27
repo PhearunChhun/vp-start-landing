@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.content-2 {
+    position: relative;
+    margin-top: 90px;
+}
+
+.content-2 section {
+    margin: 0 100px;
+}
+.smartgrid-solution{
+    background: url("../images/Rectangle.png");
+}
+.content-2 header {
+    padding-top: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.content-2 .our-hardware{
+    margin-top: 100px;
+}
+
+.content-2 .our-software .btn-see-all{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content-2 section .main-content-1,
+.main-content-2 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.content-2 section .main-content-1 .text {
+    width: 444px;
+    text-align: start;
+}
+
+.content-2 section .main-content-2 {
+    margin-top: 100px;
+}
+
+.content-2 section .main-content-2 .text {
+    width: 302px;
+    text-align: right;
+}
+.our-hardware, .our-software{
+    background: url("../images/smart-grid/Rectangle.png");
+}
+/* main content 3 */
+.main-content-3 .wrapper {
+    position: relative;
+}
+.main-content-3 .wrapper .carousel {
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    scroll-behavior: smooth;
+    margin-left: 16%;
+}
+.main-content-3 .wrapper .carousel .track-1{
+    display: flex;
+}
+ .wrapper .btn-prev-next {
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .wrapper .btn-prev-next i {
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.15rem;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: transform 0.1s linear;
+}
+
+.wrapper .btn-prev-next i:hover {
+    background: #f2f2f2;
+    color: #000;
+}
+
+/* image width-height */
+.wrapper  .carousel-img .drc-001, .drc-002, .drc-003, .drc-004, .drc-005, .drc-006, .drc-007, .drc-007, .drc-008, .drc-009, .drc-010, .drc-011, .rpm-grid, .soft-drc-001, .soft-drc-002 {
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-out;
+    width: 400px;
+    height: 540px;
+    display: flex;
+    user-select: none;
+}
+.wrapper .carousel .carousel-img .drc-001{
+    background: url("../images/smart-grid/product/be-hover-drc-001.png");
+}
+.wrapper .carousel .carousel-img .drc-002 {
+   background: url("../images/smart-grid/product/be-hover-drc-002.png");
+}
+.wrapper .carousel .carousel-img .drc-003 {
+    background: url("../images/smart-grid/product/be-hover-drc-003.png");
+}
+.wrapper .carousel .carousel-img .drc-004 {
+    background: url("../images/smart-grid/product/be-hover-drc-004.png");
+}
+.wrapper .carousel .carousel-img .drc-005 {
+    background: url("../images/smart-grid/product/be-hover-drc-005.png");
+}
+.wrapper .carousel .carousel-img .drc-006 {
+    background: url("../images/smart-grid/product/be-hover-drc-006.png");
+}
+.wrapper .carousel .carousel-img .drc-007 {
+    background: url("../images/smart-grid/product/be-hover-drc-007.png");
+}
+.wrapper .carousel .carousel-img .drc-008 {
+    background: url("../images/smart-grid/product/be-hover-drc-008.png");
+}
+.wrapper .carousel .carousel-img .drc-009 {
+    background: url("../images/smart-grid/product/be-hover-drc-009.png");
+}
+.wrapper .carousel .carousel-img .drc-010 {
+    background: url("../images/smart-grid/product/be-hover-drc-010.png");
+}
+.wrapper .carousel .carousel-img .drc-011 {
+    background: url("../images/smart-grid/product/be-hover-drc-011.png");
+}
+.wrapper .carousel .carousel-img .drc-001:hover{
+    background: url("../images/smart-grid/product/hover-drc-001.png");
+}
+.wrapper .carousel .carousel-img .drc-002:hover {
+   background: url("../images/smart-grid/product/hover-drc-002.png");
+}
+.wrapper .carousel .carousel-img .drc-003:hover {
+    background: url("../images/smart-grid/product/hover-drc-003.png");
+}
+.wrapper .carousel .carousel-img .drc-004:hover {
+    background: url("../images/smart-grid/product/hover-drc-004.png");
+}
+.wrapper .carousel .carousel-img .drc-005:hover {
+    background: url("../images/smart-grid/product/hover-drc-005.png");
+}
+.wrapper .carousel .carousel-img .drc-006:hover {
+    background: url("../images/smart-grid/product/hover-drc-006.png");
+}
+.wrapper .carousel .carousel-img .drc-007:hover {
+    background: url("../images/smart-grid/product/hover-drc-007.png");
+}
+.wrapper .carousel .carousel-img .drc-008:hover {
+    background: url("../images/smart-grid/product/hover-drc-008.png");
+}
+.wrapper .carousel .carousel-img .drc-009:hover {
+    background: url("../images/smart-grid/product/hover-drc-009.png");
+}
+.wrapper .carousel .carousel-img .drc-010:hover {
+    background: url("../images/smart-grid/product/hover-drc-010.png");
+}
+.wrapper .carousel .carousel-img .drc-011:hover {
+    background: url("../images/smart-grid/product/hover-drc-011.png");
+}
+.wrapper .carousel-1 .carousel-img .rpm-grid{
+    background: url("../images/smart-grid/software/Card.png");
+}
+.wrapper .carousel-1 .carousel-img .soft-drc-001{
+    background: url("../images/smart-grid/software/be-hover-drc-001.png");
+}
+.wrapper .carousel-1 .carousel-img .soft-drc-002{
+    background: url("../images/smart-grid/software/be-hover-drc-002.png");
+}
+
+.content-2 .our-software{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.content-2 .our-software header {
+    padding-top: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:end;
+    color: #FFFFFF;
+}
+/* main content 4 */
+.main-content-4 .wrapper {
+    position: relative;
+}
+
+.main-content-4 .wrapper .carousel-1 {
+    cursor: pointer;
+    /* background: red; */
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row-reverse;
+    scroll-behavior: smooth;
+    margin-right: 16%;
+}
+.main-content-4 .wrapper .carousel-1 .track-2{
+    display: flex;
+}
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+}
