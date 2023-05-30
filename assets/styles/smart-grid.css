@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 .content-2 {
     position: relative;
     margin-top: 90px;
 }
- .smartgrid-solution header, .text, .image{
-    margin: 0 100px;
-}
- .our-hardware header, .btn-see-all{
-    margin: 0 100px;
-}
- .our-software header, .btn-see-all{
-    margin: 0 100px;
-}
-
-.smartgrid-solution{
+.section-1{
     background: url("../images/Rectangle.png");
+}
+.section-1 .smartgrid-solution{
+    margin: 0 100px;
 }
 .content-2 header {
     padding-top: 46px;
@@ -32,6 +24,10 @@
     margin-top: 100px;
 }
 
+.content-2 .our-hardware .btn-see-all a{
+    text-decoration: none;
+    color: #fff;
+}
 .content-2 .our-software .btn-see-all{
     display: flex;
     justify-content: flex-start;
@@ -64,8 +60,11 @@
     width: 302px;
     text-align: right;
 }
-.our-hardware, .our-software{
+.section-2{
     background: url("../images/smart-grid/Rectangle.png");
+}
+.section-2 .our-hardware, .our-software{
+    margin: 0 100px;
 }
 /* main content 3 */
 .main-content-3 .wrapper {
@@ -190,11 +189,14 @@
 .wrapper .carousel-1 .carousel-img .rpm-grid{
     background: url("../images/smart-grid/software/Card.png");
 }
+.wrapper .carousel-1 .carousel-img .rpm-grid:hover{
+    background: url("../images/smart-grid/software/hover-rpm-grid.png");
+}
 .wrapper .carousel-1 .carousel-img .soft-drc-001{
     background: url("../images/smart-grid/software/be-hover-drc-001.png");
 }
-.wrapper .carousel-1 .carousel-img .soft-drc-002{
-    background: url("../images/smart-grid/software/be-hover-drc-002.png");
+.wrapper .carousel-1 .carousel-img .soft-drc-001:hover{
+    background: url("../images/smart-grid/product/hover-drc-001.png");
 }
 
 .content-2 .our-software{
@@ -230,7 +232,7 @@
 .main-content-4 .wrapper .carousel-1 .track-2{
     display: flex;
 }
-
+/*  */
 @media screen and (max-width: 900px) {
     .carousel img {
         width: calc(100% / 2);

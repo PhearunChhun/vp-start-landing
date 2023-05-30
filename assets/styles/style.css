@@ -425,7 +425,7 @@ body {
     margin-bottom: 20px;
 }
 
- .btn-see-all {
+.btn-see-all {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -437,6 +437,7 @@ body {
     border: none;
     cursor: pointer;
     color: #fff;
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -446,6 +447,7 @@ body {
  .btn-see-all button:hover {
     color: #948D8C;
     font-style: italic;
+    font-family: 'DM Sans';
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;

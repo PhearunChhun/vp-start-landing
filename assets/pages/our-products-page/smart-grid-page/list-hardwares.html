@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VP.Start</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="../../../styles/style.css">
+    <link rel="stylesheet" href="../../../styles/list-hardware.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,10 +15,11 @@
 </head>
 
 <body>
+    <!-- navigationbar  -->
     <div id="topnav" class="navbar">
         <div class="main-navbar">
             <a href="#" class="logo">
-                <img src="assets/images/Logo_2-preview.png" style="width: 47.05px;" alt="">
+                <img src="../../../images/Logo_2-preview.png" style="width: 47.05px;" alt="">
                 <div class="logo-text">
                     <div class="vp-start">
                         VP.START TECHNOLOGY Co.,LTD
@@ -28,17 +30,16 @@
                 </div>
             </a>
             <div class="navbar-right menu">
-                <a href="#" class="active">
+                <a href="../../../../index.html">
                     Home
                 </a>
                 <a style="cursor: pointer;" onclick="ourProduct()">Our Products <i class="fa-solid fa-chevron-down"
                         style="color: #ffffff;"></i></a>
                 <div id="our-product" class="overlay">
                     <div class="overlay-content">
-                        <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
+                        <img src="../../..//images/DSC00147 (2) 1.jpg" alt="">
                         <div class="product-menu">
-                            <a href="assets/pages/our-products-page/smart-grid-page/smart-grid.html">Smart Grid
-                                Solutions</a>
+                            <a href="smart-grid.html">Smart Grid Solutions</a>
                             <a href="#">AlienCheck</a>
                             <a href="#">Home Automation</a>
                             <a href="#">Smart City</a>
@@ -51,7 +52,7 @@
                 </a>
                 <div id="about-us" class="overlay">
                     <div class="overlay-content">
-                        <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
+                        <img src="../../../images/DSC00147 (2) 1.jpg" alt="">
                         <div class="product-menu">
                             <a href="#">History</a>
                             <a href="#">Message</a>
@@ -65,7 +66,7 @@
                 </a>
                 <div id="customer" class="overlay">
                     <div class="overlay-content">
-                        <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
+                        <img src="../../../images/DSC00147 (2) 1.jpg" alt="">
                         <div class="product-menu">
                             <a href="#">Customer</a>
                             <a href="#">Testimonials</a>
@@ -77,7 +78,7 @@
                 </a>
                 <div id="support" class="overlay">
                     <div class="overlay-content">
-                        <img src="assets/images/DSC00147 (2) 1.jpg" alt="">
+                        <img src="../../../images/DSC00147 (2) 1.jpg" alt="">
                         <div class="product-menu">
                             <a href="#">Frequentky Asked Questions</a>
                             <a href="#">Careers</a>
@@ -117,194 +118,127 @@
             </div>
         </div>
     </div>
-    <!-- slide show -->
-    <div id="slideshow-container" class="slideshow-container card">
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-05.jpg');"></div>
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-06.jpg');"></div>
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-04.jpg');"></div>
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-01.jpg');"></div>
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-03.jpg');"></div>
-        <div class="slide-item bgimg  fade"
-            style="background-image: url('assets/images/image-slide-show/cover web-02.jpg');"></div>
-    </div>
+    <div class="content-3">
+        <div class="section-1">
+            <header>HARDWARE</header>
+        </div>
+        <div class="section-2">
+            <a href="#" role="button" class="btn-view-product" onclick="compareDevice()">Compare device</a>
+            <div id="compare-device" class="compare-device overlay">
+                <div class="compare-modal-content">
+                    <header>
+                        Compare our DRC series of up to 3 devices. Please choose at least 2 devices.
+                    </header>
+                    <div class="search-bar">
+                        <form action="">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;font-size: 25px;"></i>
+                            <input type="text" name="" id="search" placeholder="Search...">
+                        </form>
+                    </div>
+                    <div class="checkbox">
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-001
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-002
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-003
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-004
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-005
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-006
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-007
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-008
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-009
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-010
+                        </label>
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>DRC-011
+                        </label>
+                    </div>
+                    <footer>
+                        <a class="btn-compare-device">
+                                Compare devices
+                        </a>
+                        <a href="list-hardwares.html" class="btn-cancel">
 
-    <!-- sections -->
-    <div class="section" style="background-image: url('assets/images/best-solution-degital/solution-digital.jpg');">
-        <section class="content">
-            <div class="header">
-                <h1 style="width: 1032px;">YOUR BEST DIGITAL SOLUTION</h1>
-            </div>
-            <a href="#" role="button" class="btn-view-product">View Products</a>
-        </section>
-    </div>
-    <!-- our-solutions -->
-    <div class="our-solutions">
-        <div class="card-title">
-            <h1>Our Solutions</h1>
-        </div>
-        <p class="sub-title">Here lies our solutions and project that we have been working on since the start of our
-            company</p>
-        <div class="our-solution-grid">
-            <a href="#" class="smartgrid">
-            </a>
-            <a href="#" class="aliencheck">
-            </a>
-            <a href="#" class="home-automation">
-            </a>
-            <a href="#" class="smart-city">
-            </a>
-            <a href="#" class="cloud-service">
-            </a>
-        </div>
-    </div>
-    <!-- our project -->
-    <div class="our-project">
-        <div class="card-title">
-            <h1>Our project</h1>
-        </div>
-        <p class="sub-title">Here's a quick snapshot of our coverage in terms of solutions since 2014.</p>
-        <div class="our-project-vdo">
-            <!-- <video class="vdo" width="1280" height="720" preload="true" muted="muted" autoplay>
-                <source src="https://www.youtube.com/embed/opgBWGweckE?list=PLX9KQVepbcUsQXFnFa8KvU9RPY5kylFDF" type="video/mp4">
-            </video> -->
-            <!-- <iframe class="vdo" width="1280" height="720"
-                src="https://www.youtube.com/embed/opgBWGweckE?list=PLX9KQVepbcUsQXFnFa8KvU9RPY5kylFDF"
-                title="VP.Start Company profile" frameborder="0" allow="autoplay " allowfullscreen></iframe> -->
-        </div>
-    </div>
-    <!-- get in touch -->
-    <div class="get-in-touch card">
-        <section>
-            <div>
-                <header>GET IN TOUCH</header>
-                <p>Speak to our team about your requirements. Our team consists of experienced professionals from
-                    various technical & non-technical backgrounds well versed in understanding the requirements and
-                    goals of your project(s).</p>
-            </div>
-        </section>
-    </div>
-    <div class="surveys-inspection card">
-        <section>
-            <div>
-                <header>SURVEYS & INSPECTIONS</header>
-                <p>The next appropriate step would be an inspection & survey visit to better understand your project.
-                    Our team will then be able to finalize all that might be needed on-site and anything else that was
-                    missed in initial conversations.</p>
-            </div>
-        </section>
-    </div>
-    <div class="proposal card">
-        <section>
-            <div>
-                <header>PROPOSAL</header>
-                <p>At this stage, our team will have finalized all aspects of the project, your requirements and will be
-                    well positioned to draft up an appropriate proposal for your review.</p>
-            </div>
-        </section>
-    </div>
-    <div class="luanch-execute card">
-        <section>
-            <div>
-                <header>LAUNCH & EXECUTE</header>
-                <p>After the formal paperwork is set aside, persons’ of contact assigned, such as site manager and ops
-                    teams, our team can get started on the installation phase and training (If needed).</p>
-            </div>
-        </section>
-    </div>
-    <div class="after-sale-support card">
-        <section>
-            <div>
-                <header>AFTER SALES SUPPORT</header>
-                <p>We offer training for your teams on operating our solutions at no additional cost. We provide remote
-                    assistance on a 24/7, 365 basis and can mirror your SCADA terminal from our HQ on short notice to
-                    resolve any issues immediately.</p>
-            </div>
-        </section>
-    </div>
-    <!-- testimonials -->
-    <div class="testimonial">
-        <div class="card-title">
-            <h1>TESTIMONIALS</h1>
-        </div>
-        <div class="btn-see-all">
-            <button>See All</button>
-        </div>
-        <div class="grid-col-3">
-            <div class="card-1">
-                <div class="card-text">
-                    <p>I am able to control our power source from mobile phone and computers. VP.Start solutions helped
-                        us to save a lot of power and time by helping us identify line faults faster. Their support team
-                        is really friendly and efficient in problem solving.</p>
-                </div>
-                <div class="card-profile">
-                    <div class="card-profile-image">
-                        <img src="assets/images/kep.jpg.png" alt="">
-                    </div>
-                    <div class="card-profile-name">
-                        <div class="name">
-                            Kep Power Supply
-                        </div>
-                        <p>Mr.Sot</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-2">
-                <div class="card-text">
-                    <p>I am able to control our power source from mobile phone and computers. VP.Start solutions helped
-                        us to save a lot of power and time by helping us identify line faults faster. Their support team
-                        is really friendly and efficient in problem solving.</p>
-                </div>
-                <div class="card-profile">
-                    <div class="card-profile-image">
-                        <img src="assets/images/kep.jpg.png" alt="">
-                    </div>
-                    <div class="card-profile-name">
-                        <div class="name">
-                            Kep Power Supply
-                        </div>
-                        <p>Mr.Sot</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-3">
-                <div class="card-text">
-                    <p>I am able to control our power source from mobile phone and computers. VP.Start solutions helped
-                        us to save a lot of power and time by helping us identify line faults faster. Their support team
-                        is really friendly and efficient in problem solving.</p>
-                </div>
-                <div class="card-profile">
-                    <div class="card-profile-image">
-                        <img src="assets/images/kep.jpg.png" alt="">
-                    </div>
-                    <div class="card-profile-name">
-                        <div class="name">
-                            Kep Power Supply
-                        </div>
-                        <p>Mr.Sot</p>
-                    </div>
+                            Cancel
+                        </a>
+                    </footer>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section" style="background-image: url('assets/images/schedule-meeting/Office\ 02\ 1.png');">
-        <section class="content">
-            <div class="header">
-                <h1 style="width: 1142px;">SCHEDULE A MEETING WITH US</h1>
+        <div class="section-3">
+            <div class="grid-container">
+                <div class="grid-item ">
+                    <a href="drc-001-detail.html">
+                        <div class=" drc-001"> </div>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-002"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-003"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-004"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-005"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-006"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-007"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-008"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-009"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-010"> </div>
+                </div>
+                <div class="grid-item">
+                    <div class=" drc-011"> </div>
+                </div>
             </div>
-            <a href="#" role="button" class="btn-view-product">Schedule now</a>
-        </section>
+        </div>
     </div>
     <!-- footer -->
     <div class="footer">
         <div class="grid-col-6">
             <div class="logo-company">
                 <a href="#" class="logo">
-                    <img src="assets/images/Logo_2-preview.png" style="width: 47.05px;" alt="">
+                    <img src="../../../images/Logo_2-preview.png" style="width: 47.05px;" alt="">
                     <div class="logo-text">
                         <div class="vp-start">
                             VP.START TECHNOLOGY Co.,LTD
@@ -378,7 +312,6 @@
         </div>
     </div>
 </body>
-<script src="assets/scripts/script.js"></script>
-<script src="assets/scripts/background-slideshow.js"></script>
+<script src="../../../scripts/script.js"></script>
 
 </html>

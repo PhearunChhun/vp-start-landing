@@ -30,6 +30,10 @@ function changeLanguage() {
   document.getElementById("language").style.height = "100%";
   body.style.overflow = 'hidden';
 }
+function compareDevice() {
+  document.getElementById("compare-device").style.height = "100%";
+  body.style.overflow = 'hidden';
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   var close_our_product = document.getElementById("our-product");
@@ -37,6 +41,7 @@ window.onclick = function (event) {
   var close_customer = document.getElementById("customer");
   var close_support = document.getElementById("support");
   var change_language = document.getElementById("language");
+  var compare_device = document.getElementById("compare-device");
   if (event.target == close_our_product) {
     close_our_product.style.height = "0%";
     body.style.overflow = 'auto';
@@ -51,6 +56,9 @@ window.onclick = function (event) {
     body.style.overflow = 'auto';
   } else if (event.target == change_language) {
     change_language.style.height = "0%";
+    body.style.overflow = 'auto';
+  }else if (event.target == compare_device) {
+    compare_device.style.height = "0%";
     body.style.overflow = 'auto';
   }
 };
